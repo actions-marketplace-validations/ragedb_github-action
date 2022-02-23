@@ -1,0 +1,14 @@
+name: "ragedb-action"
+description: "Setup RageDB"
+author: "ragedb"
+branding:
+  icon: database
+  color: purple
+inputs:
+  version:
+    description: "Version of RageDB to use"
+    required: false
+    default: "latest"
+runs:
+  using: "docker"
+  image: "Dockerfile"
